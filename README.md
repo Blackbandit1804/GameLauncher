@@ -9,10 +9,14 @@ This application requires you have the following software installed and availabl
 * Windows 7 or above.
 
 This application requires you install the following NuGet Packages in vb.net: 
-* MaterialDesignColors by James Willock
-* MaterialDesignThemes by James Willock
-* MaterialSkin.Updated by Ignace Maes
-* Microsoft.Toolkit.Uwp.Notifications by Microsoft
+* MaterialDesignColors
+* MaterialDesignThemes
+* MaterialSkin.Updated
+* Microsoft.Toolkit.Uwp.Notifications
+* ZipForge.NET
+* MySql Connector
+
+(Note: Some dependencies may not be listed here. If you find an unlisted dependency, please create an Issue so I can add it.)
 
 To set up the application for editing, clone the repository via Git GUI or Command Line. Open the .sln file in Visual Studio.
 
