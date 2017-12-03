@@ -1,6 +1,6 @@
 # GameLauncher
-An Open Source game launcher, Written using Visual Studio 2017 and .net
-This application was updated and upgraded over time, it is no longer needed, but development will continue as open source.
+An Open Source game launcher, Written using Visual Studio 2017 and .net framework.
+This application was updated and upgraded over time. Development will continue as open source.
 
 # Section 1 - Setup
 This application requires you have the following software installed and available to you.
