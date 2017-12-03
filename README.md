@@ -16,6 +16,8 @@ This application requires you install the following NuGet Packages in vb.net:
 * ZipForge.NET
 * MySql Connector
 
+All above dependencies should be installed to their default installation locations for easy loading of dependencies. If installed elsewhere, you will need to load the dependencies manually.
+
 (Note: Some dependencies may not be listed here. If you find an unlisted dependency, please create an Issue so I can add it.)
 
 To set up the application for editing, clone the repository via Git GUI or Command Line. Open the .sln file in Visual Studio.
