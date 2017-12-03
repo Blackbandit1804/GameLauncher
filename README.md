@@ -8,7 +8,7 @@ This application requires you have the following software installed and availabl
 * .net Framework 4.6.1 or higher. Lower versions will not work.
 * Windows 7 or above.
 
-This application requires you install the following NuGet Packages in vb.net: 
+This application requires you install the following NuGet Packages and Dependencies in vb.net: 
 * MaterialDesignColors
 * MaterialDesignThemes
 * MaterialSkin.Updated
