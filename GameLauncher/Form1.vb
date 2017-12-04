@@ -410,14 +410,6 @@ Public Class Form1
         Process.Start("bin\" + ExecutableName)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        login.Show()
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        login.Show()
-    End Sub
-
     Private Sub MaterialProgressBar1_Click(sender As Object, e As EventArgs) Handles downloadProgressBar.Click
 
     End Sub
@@ -439,10 +431,6 @@ Public Class Form1
     Private Sub newsBtn_Click(sender As Object, e As EventArgs) Handles newsBtn.Click
         MaterialTabControl1.SelectedTab = TabPage1
         sidePanelBtnClick()
-    End Sub
-
-    Private Sub signInBtn_Click(sender As Object, e As EventArgs) Handles signInBtn.Click
-        login.attemptSignIn()
     End Sub
 
     Private Sub lgnUsrBox_Click(sender As Object, e As EventArgs) Handles lgnUsrBox.Click
