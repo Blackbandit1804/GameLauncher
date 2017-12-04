@@ -2,6 +2,8 @@
 An Open Source game launcher, Written using Visual Studio 2017 and .net framework.
 This application was updated and upgraded over time. Development will continue as open source.
 
+To get notifications on when this repository is updated, join my discord server and use the #github channel: https://discord.gg/JJXWAnw
+
 # Section 1 - Setup
 This application requires you have the following software installed and available to you.
 * Visual Studio 2017 - If it helps, this was built in Visual Studio Community 2017.
