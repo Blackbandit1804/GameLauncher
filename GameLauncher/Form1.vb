@@ -3,6 +3,8 @@ Imports System.IO
 Imports System.Net
 Imports ComponentAce.Compression.Archiver
 Imports ComponentAce.Compression.ZipForge
+Imports MySql.Data.MySqlClient
+Imports System.Security.Cryptography
 
 Public Class Form1
     ' Variables
@@ -13,6 +15,13 @@ Public Class Form1
     Dim ExecutableName As String = "Test.exe" ' The name of the executable file for the application in question. Must be the main one to run the application.
     Dim allowSignUp As String = False ' Allow sign up? (Disabled mostly because its not ready yet ;p)
     Dim sideMenuIsHidden As String = "True"
+
+    ' Database Connection Information
+    Dim server As String = "Server Address (IP or DOMAIN):PORT"
+    Dim user As String = "MySQL USERNAME"
+    Dim passwd As String = "MySQL PASSWD"
+    Dim db As String = "MySQL Database to Use"
+    ' End Database Connection Information
 
     Dim value As System.Collections.ObjectModel.ReadOnlyCollection(Of String) = My.Application.CommandLineArgs
     Public ReadOnly Property CommandLineArgs As System.Collections.ObjectModel.ReadOnlyCollection(Of String)
@@ -82,11 +91,162 @@ Public Class Form1
                 playBtn.BackColor = Color.Orange
                 playBtn.Enabled = False
                 playBtn.Text = "Signing in..."
-                login.attemptSignInUsingSaved()
+                attemptSignInUsingSaved()
             End If
         End If
 
     End Sub
+
+    ' Functions for login and signup. Moved straight from login.vb in preperation to remove it.
+
+    Function generateCredentials()
+        attemptSignIn()
+    End Function
+
+    Function attemptSignInUsingSaved()
+        Me.Hide()
+        playBtn.BackColor = Color.Orange
+        playBtn.Enabled = False
+        playBtn.Text = "Signing in..."
+        Dim username As String = My.Settings.user
+        Dim passhash As String = My.Settings.hash
+        Dim mydbcon As MySqlConnection
+        Dim COMMAND As MySqlCommand
+        ' The function which handles signing the user into their account in the database.
+        mydbcon = New MySqlConnection
+        Dim ConnString As String = "server=" + server + ";userid=" + user + ";password=" + passwd + ";database=" + db
+        'mydbcon.ConnectionString = "server=ssh.csxking.me;userid=csxking;password=maxelis2;database=greenie"
+        mydbcon.ConnectionString = ConnString
+        Dim reader As MySqlDataReader
+
+        Try
+            mydbcon.Open()
+            Dim Query As String
+            Query = String.Format("SELECT * FROM accounts WHERE username = '{0}' AND passhash = '{1}'", username.Trim(), passhash.Trim())
+            COMMAND = New MySqlCommand(Query, mydbcon)
+            reader = COMMAND.ExecuteReader
+
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+
+            End While
+
+            If count = 1 Then
+                ' If correct
+                playBtn.Enabled = True
+                playBtn.BackColor = Color.Green
+                playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
+                usrTxt.Text = "Welcome, " + My.Settings.user
+                game()
+                loginBtn.Text = "Switch account"
+                signUpBtn.Hide()
+                signOutBtnPublic.Show()
+                signInBtn.Text = "Switch Account"
+            ElseIf count > 1 Then
+                ' If dupe?
+            Else
+                ' If incorrect
+                MessageBox.Show("Invalid username or password. Please try again.")
+                My.Settings.user = ""
+                My.Settings.hash = ""
+                My.Settings.Save()
+                playBtn.Enabled = False
+                playBtn.BackColor = Color.DarkRed
+                playBtn.Text = "Please log in to continue."
+                loginBtn.Text = "Sign in / Sign up"
+            End If
+            mydbcon.Close()
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            mydbcon.Dispose()
+        End Try
+
+    End Function
+
+    Function attemptSignIn()
+        playBtn.BackColor = Color.Orange
+        playBtn.Enabled = False
+        playBtn.Text = "Signing in..."
+        Me.Hide()
+        Dim username As String = lgnUsrBox.Text
+        Dim passhash As String = SHA256(lgnPassBox.Text)
+        Dim mydbcon As MySqlConnection
+        Dim COMMAND As MySqlCommand
+        ' The function which handles signing the user into their account in the database.
+        mydbcon = New MySqlConnection
+        Dim ConnString As String = "server=" + server + ";userid=" + user + ";password=" + passwd + ";database=" + db
+        mydbcon.ConnectionString = ConnString
+        Dim reader As MySqlDataReader
+
+        Try
+            mydbcon.Open()
+            Dim Query As String
+            Query = String.Format("SELECT * FROM accounts WHERE username = '{0}' AND passhash = '{1}'", username.Trim(), passhash.Trim())
+            COMMAND = New MySqlCommand(Query, mydbcon)
+            reader = COMMAND.ExecuteReader
+
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+
+            End While
+            If count = 1 Then
+                ' If correct
+                My.Settings.user = username
+                My.Settings.hash = passhash
+                My.Settings.Save()
+                playBtn.Enabled = True
+                playBtn.BackColor = Color.Green
+                playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
+                usrTxt.Text = "Welcome, " + My.Settings.user
+                game()
+                loginBtn.Text = "Switch account"
+                MaterialTabControl1.SelectedTab = TabPage1
+                signUpBtn.Hide()
+                signOutBtnPublic.Show()
+                signInBtn.Text = "Switch Account"
+                Me.Hide()
+            ElseIf count > 1 Then
+                ' If dupe?
+            Else
+                ' If incorrect
+                MessageBox.Show("Invalid username or password. Please try again.")
+                My.Settings.user = ""
+                My.Settings.hash = ""
+                My.Settings.Save()
+                playBtn.Enabled = False
+                playBtn.BackColor = Color.DarkRed
+                playBtn.Text = "Please log in to continue."
+                loginBtn.Text = "Sign in / Sign up"
+                Me.Hide()
+            End If
+            mydbcon.Close()
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            mydbcon.Dispose()
+        End Try
+
+    End Function
+
+    Private Function SHA256(ByVal Content As String) As String
+        Dim MoLeCuL3 As New System.Security.Cryptography.SHA256CryptoServiceProvider
+        Dim ByteString() As Byte = System.Text.Encoding.ASCII.GetBytes(Content)
+        ByteString = MoLeCuL3.ComputeHash(ByteString)
+
+        Dim FinalString As String = Nothing
+        For Each bt As Byte In ByteString
+            FinalString &= bt.ToString("x2")
+        Next
+        Return FinalString
+    End Function
+
+    ' End login.vb functions
+
     Function GameDev()
         playBtn.Text = "Installing update..."
         playBtn.Enabled = False
@@ -166,7 +326,7 @@ Public Class Form1
                 playBtn.BackColor = Color.Orange
                 playBtn.Enabled = False
                 playBtn.Text = "Signing in..."
-                login.attemptSignInUsingSaved()
+                attemptSignInUsingSaved()
             End If
         End If
         Dim newBuildNum As String = My.Computer.FileSystem.ReadAllText("version")
