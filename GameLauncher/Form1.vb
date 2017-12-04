@@ -388,7 +388,6 @@ Public Class Form1
     Sub archiver_OnFileProgress(ByVal sender As Object, ByVal fileName As String, ByVal progress As Double, ByVal timeElapsed As TimeSpan, ByVal timeLeft As TimeSpan, ByVal operation As ProcessOperation, ByVal progressPhase As ProgressPhase, ByRef cancel As Boolean) Handles archiver.OnFileProgress
         'textBox.AppendText("your new text" & Environment.NewLine)
         frmPrgs.AppendText("Extracting file: " + fileName + "... Progress: " + progress.ToString + "%" & Environment.NewLine)
-        Console.consoleBox.AppendText("Processing {0}, {1}" + progress.ToString + "% complete, time left: {2}" + fileName + progress.ToString("f2") + " " + timeLeft.ToString & Environment.NewLine)
     End Sub
 
     Private Sub Progress_Tick(sender As Object, e As EventArgs) Handles Progress.Tick
