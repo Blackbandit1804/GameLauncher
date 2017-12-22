@@ -1,0 +1,342 @@
+﻿2017-12-13 01:33:04> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.0.nupkg
+2017-12-13 01:33:04> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 01:33:04> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.0.nupkg
+2017-12-13 01:33:04> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.0.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.0-full.nupkg
+2017-12-13 01:33:06> ReleasePackage: Extracting dependent packages: []
+2017-12-13 01:33:06> ReleasePackage: Removing unnecessary data
+2017-12-13 01:33:06> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 01:33:10> Program: Building embedded zip file for Setup.exe
+2017-12-13 01:39:09> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.1.nupkg
+2017-12-13 01:39:09> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 01:39:09> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.1.nupkg
+2017-12-13 01:39:09> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.1.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.1-full.nupkg
+2017-12-13 01:39:10> ReleasePackage: Extracting dependent packages: []
+2017-12-13 01:39:10> ReleasePackage: Removing unnecessary data
+2017-12-13 01:39:10> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 01:39:14> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.0-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.1-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.application hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.exe hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.manifest hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher.xml hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 01:39:16> Program: Building embedded zip file for Setup.exe
+2017-12-13 01:46:25> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.2.nupkg
+2017-12-13 01:46:25> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 01:46:25> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.2.nupkg
+2017-12-13 01:46:25> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.2.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.2-full.nupkg
+2017-12-13 01:46:26> ReleasePackage: Extracting dependent packages: []
+2017-12-13 01:46:26> ReleasePackage: Removing unnecessary data
+2017-12-13 01:46:26> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 01:46:31> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.1-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.2-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe.manifest => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe.manifest
+2017-12-13 01:46:33> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.exe.manifest: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 01:46:33> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.pdb => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.pdb
+2017-12-13 01:46:33> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.pdb: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 01:46:33> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 01:46:34> Program: Building embedded zip file for Setup.exe
+2017-12-13 01:51:42> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.3.nupkg
+2017-12-13 01:51:42> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 01:51:43> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.3.nupkg
+2017-12-13 01:51:43> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.3.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.3-full.nupkg
+2017-12-13 01:51:44> ReleasePackage: Extracting dependent packages: []
+2017-12-13 01:51:44> ReleasePackage: Removing unnecessary data
+2017-12-13 01:51:44> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 01:51:47> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.2-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.3-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe
+2017-12-13 01:51:49> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 01:51:49> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe.manifest => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe.manifest
+2017-12-13 01:51:49> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.exe.manifest: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 01:51:49> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.pdb => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.pdb
+2017-12-13 01:51:50> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.pdb: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 01:51:50> Program: Building embedded zip file for Setup.exe
+2017-12-13 01:57:44> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.4.nupkg
+2017-12-13 01:57:44> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 01:57:44> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.4.nupkg
+2017-12-13 01:57:44> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.4.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.4-full.nupkg
+2017-12-13 01:57:46> ReleasePackage: Extracting dependent packages: []
+2017-12-13 01:57:46> ReleasePackage: Removing unnecessary data
+2017-12-13 01:57:46> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 01:57:50> Program: Building embedded zip file for Setup.exe
+2017-12-13 02:00:19> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.5.nupkg
+2017-12-13 02:00:19> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 02:00:19> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg
+2017-12-13 02:00:19> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg
+2017-12-13 02:00:21> ReleasePackage: Extracting dependent packages: []
+2017-12-13 02:00:21> ReleasePackage: Removing unnecessary data
+2017-12-13 02:00:21> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 02:00:24> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.4-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 02:00:26> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 02:00:26> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 02:00:26> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 02:00:26> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe.manifest => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe.manifest
+2017-12-13 02:00:27> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.exe.manifest: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:00:27> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.pdb => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.pdb
+2017-12-13 02:00:27> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.pdb: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 02:00:27> Program: Building embedded zip file for Setup.exe
+2017-12-13 02:04:56> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.5.nupkg
+2017-12-13 02:04:56> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 02:04:56> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg
+2017-12-13 02:04:56> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg
+2017-12-13 02:04:58> ReleasePackage: Extracting dependent packages: []
+2017-12-13 02:04:58> ReleasePackage: Removing unnecessary data
+2017-12-13 02:04:58> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 02:05:01> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.4-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe
+2017-12-13 02:05:03> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 02:05:03> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe.manifest => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe.manifest
+2017-12-13 02:05:03> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.exe.manifest: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:05:03> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.pdb => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.pdb
+2017-12-13 02:05:04> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.pdb: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 02:05:04> Program: Building embedded zip file for Setup.exe
+2017-12-13 02:10:09> Program: Starting Squirrel Updater: --releasify .\GameLauncher.1.0.5.nupkg
+2017-12-13 02:10:09> Program: Bootstrapper EXE found at:F:\source\repos\GameLauncher\packages\squirrel.windows.1.7.8\tools\Setup.exe
+2017-12-13 02:10:09> Program: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg
+2017-12-13 02:10:09> ReleasePackage: Creating release package: F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher.1.0.5.nupkg => F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg
+2017-12-13 02:10:11> ReleasePackage: Extracting dependent packages: []
+2017-12-13 02:10:11> ReleasePackage: Removing unnecessary data
+2017-12-13 02:10:11> ReleasePackage: No release notes found in C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\GameLauncher.nuspec
+2017-12-13 02:10:15> DeltaPackageBuilder: Extracting .\Releases\GameLauncher-1.0.4-full.nupkg and F:\source\repos\GameLauncher\GameLauncher\Bin\Final\Releases\GameLauncher-1.0.5-full.nupkg into C:\Users\csxki\AppData\Local\SquirrelTemp\tempb
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\avcodec-53.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\avformat-53.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\avutil-51.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Awesomium.Core.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\awesomium.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Awesomium.Windows.Forms.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\awesomium_process hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\GameLauncher.exe.config hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.exe.manifest => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.exe.manifest
+2017-12-13 02:10:18> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.exe.manifest: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:10:18> DeltaPackageBuilder: Delta patching C:\Users\csxki\AppData\Local\SquirrelTemp\tempa\lib\net451\GameLauncher.pdb => C:\Users\csxki\AppData\Local\SquirrelTemp\tempb\lib\net451\GameLauncher.pdb
+2017-12-13 02:10:18> DeltaPackageBuilder: We really couldn't create a delta for GameLauncher.pdb: System.DivideByZeroException: Attempted to divide by zero.
+   at Squirrel.Bsdiff.BinaryPatchUtility.Create(Byte[] oldData, Byte[] newData, Stream output)
+   at Squirrel.DeltaPackageBuilder.createDeltaForSingleFile(FileInfo targetFile, DirectoryInfo workingDirectory, Dictionary`2 baseFileListing)
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\GameLauncher_ExecutionStub.exe hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\icudt.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\inspector.pak hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\libEGL.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\libGLESv2.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\MaterialDesignColors.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\MaterialDesignThemes.Wpf.pdb hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\MaterialSkin.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Microsoft.Toolkit.Uwp.Notifications.pdb hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Mono.Cecil.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\MySql.Data.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\NuGet.Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\pdf_js.pak hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\SharpCompress.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Splat.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Splat.pdb hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Squirrel.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\Squirrel.pdb hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\xinput9_1_0.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> DeltaPackageBuilder: \lib\net451\ZipForge.dll hasn't changed, writing dummy file
+2017-12-13 02:10:18> Program: Building embedded zip file for Setup.exe

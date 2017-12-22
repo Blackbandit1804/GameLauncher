@@ -3,38 +3,42 @@ Imports System.IO
 Imports System.Net
 Imports ComponentAce.Compression.Archiver
 Imports ComponentAce.Compression.ZipForge
-Imports MySql.Data.MySqlClient
-Imports System.Security.Cryptography
+Imports Squirrel
 
 Public Class Form1
+
+    ' Squirrel Test
+
+    ' End Squirrel Test
+
     ' Variables
-    Dim DownloadUrl As String = "https://example.com/latest.zip" ' Latest remote build of the game. Should always contain the full game within it, else updates and installations could fail.
-    Dim remoteBuildFile As String = "https://example.com/version.txt" ' Remote version file. Lets us check for updates.
+    Dim DownloadUrl As String = "https://dl.csxking.me/Greenie/latest.zip" ' Remote build of the game. Should always contain the full game within it, else updates and installations could fail.
+    Dim remoteBuildFile As String = "https://dl.csxking.me/Greenie/version.txt" ' Remote version file. Lets us check for updates.
     Dim ThisLocation As String = Environment.CurrentDirectory ' This defines the current directory, in other words, the installation location of the launcher, and therefor, the game.
-    Dim DownloadFileName As String = "update.zip" ' The name you want to name the .zip file download to be.
-    Dim ExecutableName As String = "Test.exe" ' The name of the executable file for the application in question. Must be the main one to run the application.
+    Dim DownloadFileName As String = "update.zip" ' The name you want to name the .zip file to be.
+    Dim ExecutableName As String = "Test.exe" ' The name of the executable file for the game in question. Must be the main one to run the game.
     Dim allowSignUp As String = False ' Allow sign up? (Disabled mostly because its not ready yet ;p)
     Dim sideMenuIsHidden As String = "True"
-
-    ' Database Connection Information
-    Dim server As String = "Server Address (IP or DOMAIN):PORT"
-    Dim user As String = "MySQL USERNAME"
-    Dim passwd As String = "MySQL PASSWD"
-    Dim db As String = "MySQL Database to Use"
-    ' End Database Connection Information
 
     Dim value As System.Collections.ObjectModel.ReadOnlyCollection(Of String) = My.Application.CommandLineArgs
     Public ReadOnly Property CommandLineArgs As System.Collections.ObjectModel.ReadOnlyCollection(Of String)
 
     Dim IsDeveloper As String
     Public Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SideMenuPanel.Hide()
-        SideMenuPanel.BringToFront()
-        sideMenuBtn.BringToFront()
+        Dim mgr As New UpdateManager("https://dl.csxking.me/GameLauncher/NewGL/RELEASES")
+        mgr.UpdateApp()
         sideMenuIsHidden = "True"
         Me.Refresh()
         signOutBtnPublic.Hide()
         frmPrgs.ReadOnly = True
+        ' Begin developer menu security
+        If My.Application.CommandLineArgs.Count = 1 Then
+            IsDeveloper = My.Application.CommandLineArgs(0)
+        End If
+        If IsDeveloper = "--developer" Then
+            EnableDevBtnToggle.Show()
+        End If
+        ' End developer menu security
         If allowSignUp = True Then
             signUpBtn.Visible = True
         Else
@@ -91,162 +95,16 @@ Public Class Form1
                 playBtn.BackColor = Color.Orange
                 playBtn.Enabled = False
                 playBtn.Text = "Signing in..."
-                attemptSignInUsingSaved()
+                login.attemptSignInUsingSaved()
             End If
         End If
 
     End Sub
+    Private Function UpdateApp()
 
-    ' Functions for login and signup. Moved straight from login.vb in preperation to remove it.
-
-    Function generateCredentials()
-        attemptSignIn()
-    End Function
-
-    Function attemptSignInUsingSaved()
-        Me.Hide()
-        playBtn.BackColor = Color.Orange
-        playBtn.Enabled = False
-        playBtn.Text = "Signing in..."
-        Dim username As String = My.Settings.user
-        Dim passhash As String = My.Settings.hash
-        Dim mydbcon As MySqlConnection
-        Dim COMMAND As MySqlCommand
-        ' The function which handles signing the user into their account in the database.
-        mydbcon = New MySqlConnection
-        Dim ConnString As String = "server=" + server + ";userid=" + user + ";password=" + passwd + ";database=" + db
-        'mydbcon.ConnectionString = "server=ssh.csxking.me;userid=csxking;password=maxelis2;database=greenie"
-        mydbcon.ConnectionString = ConnString
-        Dim reader As MySqlDataReader
-
-        Try
-            mydbcon.Open()
-            Dim Query As String
-            Query = String.Format("SELECT * FROM accounts WHERE username = '{0}' AND passhash = '{1}'", username.Trim(), passhash.Trim())
-            COMMAND = New MySqlCommand(Query, mydbcon)
-            reader = COMMAND.ExecuteReader
-
-            Dim count As Integer
-            count = 0
-            While reader.Read
-                count = count + 1
-
-            End While
-
-            If count = 1 Then
-                ' If correct
-                playBtn.Enabled = True
-                playBtn.BackColor = Color.Green
-                playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
-                usrTxt.Text = "Welcome, " + My.Settings.user
-                game()
-                loginBtn.Text = "Switch account"
-                signUpBtn.Hide()
-                signOutBtnPublic.Show()
-                signInBtn.Text = "Switch Account"
-            ElseIf count > 1 Then
-                ' If dupe?
-            Else
-                ' If incorrect
-                MessageBox.Show("Invalid username or password. Please try again.")
-                My.Settings.user = ""
-                My.Settings.hash = ""
-                My.Settings.Save()
-                playBtn.Enabled = False
-                playBtn.BackColor = Color.DarkRed
-                playBtn.Text = "Please log in to continue."
-                loginBtn.Text = "Sign in / Sign up"
-            End If
-            mydbcon.Close()
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
-        Finally
-            mydbcon.Dispose()
-        End Try
+        MsgBox("UPDATE SUCCESSFULL!")
 
     End Function
-
-    Function attemptSignIn()
-        playBtn.BackColor = Color.Orange
-        playBtn.Enabled = False
-        playBtn.Text = "Signing in..."
-        Me.Hide()
-        Dim username As String = lgnUsrBox.Text
-        Dim passhash As String = SHA256(lgnPassBox.Text)
-        Dim mydbcon As MySqlConnection
-        Dim COMMAND As MySqlCommand
-        ' The function which handles signing the user into their account in the database.
-        mydbcon = New MySqlConnection
-        Dim ConnString As String = "server=" + server + ";userid=" + user + ";password=" + passwd + ";database=" + db
-        mydbcon.ConnectionString = ConnString
-        Dim reader As MySqlDataReader
-
-        Try
-            mydbcon.Open()
-            Dim Query As String
-            Query = String.Format("SELECT * FROM accounts WHERE username = '{0}' AND passhash = '{1}'", username.Trim(), passhash.Trim())
-            COMMAND = New MySqlCommand(Query, mydbcon)
-            reader = COMMAND.ExecuteReader
-
-            Dim count As Integer
-            count = 0
-            While reader.Read
-                count = count + 1
-
-            End While
-            If count = 1 Then
-                ' If correct
-                My.Settings.user = username
-                My.Settings.hash = passhash
-                My.Settings.Save()
-                playBtn.Enabled = True
-                playBtn.BackColor = Color.Green
-                playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
-                usrTxt.Text = "Welcome, " + My.Settings.user
-                game()
-                loginBtn.Text = "Switch account"
-                MaterialTabControl1.SelectedTab = TabPage1
-                signUpBtn.Hide()
-                signOutBtnPublic.Show()
-                signInBtn.Text = "Switch Account"
-                Me.Hide()
-            ElseIf count > 1 Then
-                ' If dupe?
-            Else
-                ' If incorrect
-                MessageBox.Show("Invalid username or password. Please try again.")
-                My.Settings.user = ""
-                My.Settings.hash = ""
-                My.Settings.Save()
-                playBtn.Enabled = False
-                playBtn.BackColor = Color.DarkRed
-                playBtn.Text = "Please log in to continue."
-                loginBtn.Text = "Sign in / Sign up"
-                Me.Hide()
-            End If
-            mydbcon.Close()
-        Catch ex As MySqlException
-            MessageBox.Show(ex.Message)
-        Finally
-            mydbcon.Dispose()
-        End Try
-
-    End Function
-
-    Private Function SHA256(ByVal Content As String) As String
-        Dim MoLeCuL3 As New System.Security.Cryptography.SHA256CryptoServiceProvider
-        Dim ByteString() As Byte = System.Text.Encoding.ASCII.GetBytes(Content)
-        ByteString = MoLeCuL3.ComputeHash(ByteString)
-
-        Dim FinalString As String = Nothing
-        For Each bt As Byte In ByteString
-            FinalString &= bt.ToString("x2")
-        Next
-        Return FinalString
-    End Function
-
-    ' End login.vb functions
-
     Function GameDev()
         playBtn.Text = "Installing update..."
         playBtn.Enabled = False
@@ -267,7 +125,6 @@ Public Class Form1
     Function sidePanelBtnClick()
         If My.Settings.hideSidePanelOnMenuOptionClick = "True" Then
             sideMenuIsHidden = "True"
-            SideMenuPanel.Hide()
         Else
         End If
     End Function
@@ -326,7 +183,7 @@ Public Class Form1
                 playBtn.BackColor = Color.Orange
                 playBtn.Enabled = False
                 playBtn.Text = "Signing in..."
-                attemptSignInUsingSaved()
+                login.attemptSignInUsingSaved()
             End If
         End If
         Dim newBuildNum As String = My.Computer.FileSystem.ReadAllText("version")
@@ -388,6 +245,7 @@ Public Class Form1
     Sub archiver_OnFileProgress(ByVal sender As Object, ByVal fileName As String, ByVal progress As Double, ByVal timeElapsed As TimeSpan, ByVal timeLeft As TimeSpan, ByVal operation As ProcessOperation, ByVal progressPhase As ProgressPhase, ByRef cancel As Boolean) Handles archiver.OnFileProgress
         'textBox.AppendText("your new text" & Environment.NewLine)
         frmPrgs.AppendText("Extracting file: " + fileName + "... Progress: " + progress.ToString + "%" & Environment.NewLine)
+        Console.consoleBox.AppendText("Processing {0}, {1}" + progress.ToString + "% complete, time left: {2}" + fileName + progress.ToString("f2") + " " + timeLeft.ToString & Environment.NewLine)
     End Sub
 
     Private Sub Progress_Tick(sender As Object, e As EventArgs) Handles Progress.Tick
@@ -409,6 +267,22 @@ Public Class Form1
         Process.Start("bin\" + ExecutableName)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        login.Show()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        login.Show()
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        DevMenu.Show()
+    End Sub
+
+    Private Sub DEV_TST_MENU_Click(sender As Object, e As EventArgs)
+        DevMenu.Show()
+    End Sub
+
     Private Sub MaterialProgressBar1_Click(sender As Object, e As EventArgs) Handles downloadProgressBar.Click
 
     End Sub
@@ -422,6 +296,13 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub DEV_TST_MENU_Click_1(sender As Object, e As EventArgs)
+        DevMenu.Show()
+    End Sub
+    Private Sub DEV_TST_MENU_Click_2(sender As Object, e As EventArgs)
+        DevMenu.Show()
+    End Sub
+
     Private Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
         MaterialTabControl1.SelectedTab = TabPage2
         sidePanelBtnClick()
@@ -430,6 +311,10 @@ Public Class Form1
     Private Sub newsBtn_Click(sender As Object, e As EventArgs) Handles newsBtn.Click
         MaterialTabControl1.SelectedTab = TabPage1
         sidePanelBtnClick()
+    End Sub
+
+    Private Sub signInBtn_Click(sender As Object, e As EventArgs) Handles signInBtn.Click
+        login.attemptSignIn()
     End Sub
 
     Private Sub lgnUsrBox_Click(sender As Object, e As EventArgs) Handles lgnUsrBox.Click
@@ -504,16 +389,6 @@ Public Class Form1
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles signOutBtnPublic.Click
         signOut()
-    End Sub
-
-    Private Sub sideMenuBtn_Click(sender As Object, e As EventArgs) Handles sideMenuBtn.Click
-        If sideMenuIsHidden = "False" Then
-            SideMenuPanel.Hide()
-            sideMenuIsHidden = "True"
-        Else
-            sideMenuIsHidden = "False"
-            SideMenuPanel.Show()
-        End If
     End Sub
 
     Private Sub keepSidebarOpenTick_CheckedChanged(sender As Object, e As EventArgs) Handles keepSidebarOpenTick.CheckedChanged

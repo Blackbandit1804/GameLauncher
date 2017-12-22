@@ -43,6 +43,7 @@ Partial Class Form1
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.keepSidebarOpenTick = New MaterialSkin.Controls.MaterialCheckBox()
         Me.keepChangeLogOpenOnUpdateChkBox = New MaterialSkin.Controls.MaterialCheckBox()
+        Me.EnableDevBtnToggle = New MaterialSkin.Controls.MaterialCheckBox()
         Me.SaveLoginDetailsBtn = New MaterialSkin.Controls.MaterialCheckBox()
         Me.keepLauncherOpenBox = New MaterialSkin.Controls.MaterialCheckBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -51,17 +52,11 @@ Partial Class Form1
         Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.freezeWarning = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
-        Me.SideMenuPanel = New System.Windows.Forms.Panel()
-        Me.usrTxt = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialDivider2 = New MaterialSkin.Controls.MaterialDivider()
-        Me.MaterialDivider1 = New MaterialSkin.Controls.MaterialDivider()
-        Me.sideMenuBtn = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
-        Me.SideMenuPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Download
@@ -114,7 +109,7 @@ Partial Class Form1
         Me.loginBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.loginBtn.Depth = 0
         Me.loginBtn.Icon = Nothing
-        Me.loginBtn.Location = New System.Drawing.Point(14, 64)
+        Me.loginBtn.Location = New System.Drawing.Point(6, 4)
         Me.loginBtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.loginBtn.MouseState = MaterialSkin.MouseState.HOVER
         Me.loginBtn.Name = "loginBtn"
@@ -130,7 +125,7 @@ Partial Class Form1
         Me.newsBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.newsBtn.Depth = 0
         Me.newsBtn.Icon = Nothing
-        Me.newsBtn.Location = New System.Drawing.Point(14, 128)
+        Me.newsBtn.Location = New System.Drawing.Point(140, 4)
         Me.newsBtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.newsBtn.MouseState = MaterialSkin.MouseState.HOVER
         Me.newsBtn.Name = "newsBtn"
@@ -287,6 +282,7 @@ Partial Class Form1
         Me.TabPage3.BackColor = System.Drawing.Color.Gray
         Me.TabPage3.Controls.Add(Me.keepSidebarOpenTick)
         Me.TabPage3.Controls.Add(Me.keepChangeLogOpenOnUpdateChkBox)
+        Me.TabPage3.Controls.Add(Me.EnableDevBtnToggle)
         Me.TabPage3.Controls.Add(Me.SaveLoginDetailsBtn)
         Me.TabPage3.Controls.Add(Me.keepLauncherOpenBox)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
@@ -327,6 +323,22 @@ Partial Class Form1
         Me.keepChangeLogOpenOnUpdateChkBox.TabIndex = 18
         Me.keepChangeLogOpenOnUpdateChkBox.Text = "Keep Update Log Open?"
         Me.keepChangeLogOpenOnUpdateChkBox.UseVisualStyleBackColor = True
+        '
+        'EnableDevBtnToggle
+        '
+        Me.EnableDevBtnToggle.AutoSize = True
+        Me.EnableDevBtnToggle.Depth = 0
+        Me.EnableDevBtnToggle.Font = New System.Drawing.Font("Roboto", 10.0!)
+        Me.EnableDevBtnToggle.Location = New System.Drawing.Point(10, 135)
+        Me.EnableDevBtnToggle.Margin = New System.Windows.Forms.Padding(0)
+        Me.EnableDevBtnToggle.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.EnableDevBtnToggle.MouseState = MaterialSkin.MouseState.HOVER
+        Me.EnableDevBtnToggle.Name = "EnableDevBtnToggle"
+        Me.EnableDevBtnToggle.Ripple = True
+        Me.EnableDevBtnToggle.Size = New System.Drawing.Size(205, 30)
+        Me.EnableDevBtnToggle.TabIndex = 1
+        Me.EnableDevBtnToggle.Text = "Enable Developer Test Menu"
+        Me.EnableDevBtnToggle.UseVisualStyleBackColor = True
         '
         'SaveLoginDetailsBtn
         '
@@ -414,7 +426,7 @@ Partial Class Form1
         Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialFlatButton1.Depth = 0
         Me.MaterialFlatButton1.Icon = Nothing
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(11, 456)
+        Me.MaterialFlatButton1.Location = New System.Drawing.Point(207, 4)
         Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
@@ -424,94 +436,25 @@ Partial Class Form1
         Me.MaterialFlatButton1.Text = "Settings"
         Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
-        'SideMenuPanel
-        '
-        Me.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SideMenuPanel.Controls.Add(Me.usrTxt)
-        Me.SideMenuPanel.Controls.Add(Me.loginBtn)
-        Me.SideMenuPanel.Controls.Add(Me.MaterialDivider2)
-        Me.SideMenuPanel.Controls.Add(Me.MaterialDivider1)
-        Me.SideMenuPanel.Controls.Add(Me.newsBtn)
-        Me.SideMenuPanel.Controls.Add(Me.MaterialFlatButton1)
-        Me.SideMenuPanel.Location = New System.Drawing.Point(-1, 1)
-        Me.SideMenuPanel.Name = "SideMenuPanel"
-        Me.SideMenuPanel.Size = New System.Drawing.Size(203, 574)
-        Me.SideMenuPanel.TabIndex = 22
-        '
-        'usrTxt
-        '
-        Me.usrTxt.AutoSize = True
-        Me.usrTxt.Depth = 0
-        Me.usrTxt.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.usrTxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.usrTxt.Location = New System.Drawing.Point(19, 38)
-        Me.usrTxt.MouseState = MaterialSkin.MouseState.HOVER
-        Me.usrTxt.Name = "usrTxt"
-        Me.usrTxt.Size = New System.Drawing.Size(99, 19)
-        Me.usrTxt.TabIndex = 23
-        Me.usrTxt.Text = "Please Log In"
-        '
-        'MaterialDivider2
-        '
-        Me.MaterialDivider2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialDivider2.Depth = 0
-        Me.MaterialDivider2.Location = New System.Drawing.Point(0, 444)
-        Me.MaterialDivider2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialDivider2.Name = "MaterialDivider2"
-        Me.MaterialDivider2.Size = New System.Drawing.Size(203, 10)
-        Me.MaterialDivider2.TabIndex = 22
-        Me.MaterialDivider2.Text = "MaterialDivider2"
-        '
-        'MaterialDivider1
-        '
-        Me.MaterialDivider1.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialDivider1.Depth = 0
-        Me.MaterialDivider1.Location = New System.Drawing.Point(-2, 109)
-        Me.MaterialDivider1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialDivider1.Name = "MaterialDivider1"
-        Me.MaterialDivider1.Size = New System.Drawing.Size(203, 10)
-        Me.MaterialDivider1.TabIndex = 21
-        Me.MaterialDivider1.Text = "MaterialDivider1"
-        '
-        'sideMenuBtn
-        '
-        Me.sideMenuBtn.AutoSize = True
-        Me.sideMenuBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.sideMenuBtn.BackColor = System.Drawing.Color.Transparent
-        Me.sideMenuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.sideMenuBtn.Depth = 0
-        Me.sideMenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.sideMenuBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sideMenuBtn.ForeColor = System.Drawing.Color.Transparent
-        Me.sideMenuBtn.Icon = Nothing
-        Me.sideMenuBtn.Location = New System.Drawing.Point(-1, 1)
-        Me.sideMenuBtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.sideMenuBtn.MouseState = MaterialSkin.MouseState.HOVER
-        Me.sideMenuBtn.Name = "sideMenuBtn"
-        Me.sideMenuBtn.Primary = False
-        Me.sideMenuBtn.Size = New System.Drawing.Size(29, 36)
-        Me.sideMenuBtn.TabIndex = 1
-        Me.sideMenuBtn.Text = "≡"
-        Me.sideMenuBtn.UseVisualStyleBackColor = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1137, 575)
-        Me.Controls.Add(Me.sideMenuBtn)
+        Me.Controls.Add(Me.loginBtn)
+        Me.Controls.Add(Me.newsBtn)
+        Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.MaterialTabControl1)
         Me.Controls.Add(Me.buildNumberNotifier)
         Me.Controls.Add(Me.playBtn)
         Me.Controls.Add(Me.downloadProgressBar)
         Me.Controls.Add(Me.freezeWarning)
-        Me.Controls.Add(Me.SideMenuPanel)
         Me.MaximumSize = New System.Drawing.Size(1153, 614)
         Me.MinimumSize = New System.Drawing.Size(1153, 614)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "GameLauncher"
+        Me.Text = "GameLauncher_SQUIRREL_DEV_3"
         Me.MaterialTabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
@@ -520,8 +463,6 @@ Partial Class Form1
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
-        Me.SideMenuPanel.ResumeLayout(False)
-        Me.SideMenuPanel.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -547,16 +488,12 @@ Partial Class Form1
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents SaveLoginDetailsBtn As MaterialSkin.Controls.MaterialCheckBox
+    Friend WithEvents EnableDevBtnToggle As MaterialSkin.Controls.MaterialCheckBox
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents frmPrgs As TextBox
     Friend WithEvents keepChangeLogOpenOnUpdateChkBox As MaterialSkin.Controls.MaterialCheckBox
     Friend WithEvents signOutBtnPublic As MaterialSkin.Controls.MaterialRaisedButton
     Private WithEvents WebControl2 As Awesomium.Windows.Forms.WebControl
-    Friend WithEvents SideMenuPanel As Panel
-    Friend WithEvents MaterialDivider2 As MaterialSkin.Controls.MaterialDivider
-    Friend WithEvents MaterialDivider1 As MaterialSkin.Controls.MaterialDivider
-    Friend WithEvents usrTxt As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents sideMenuBtn As MaterialSkin.Controls.MaterialFlatButton
     Private WithEvents WebControl3 As Awesomium.Windows.Forms.WebControl
     Friend WithEvents keepSidebarOpenTick As MaterialSkin.Controls.MaterialCheckBox
 End Class

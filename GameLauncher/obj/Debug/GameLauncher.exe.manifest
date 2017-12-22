@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GameLauncher.exe" size="53248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GameLauncher.exe" size="58880">
       <assemblyIdentity name="GameLauncher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9LIaL56DSxXXEf5luvoSdqefopgLKAXSCf/YAIk6l24=</dsig:DigestValue>
+        <dsig:DigestValue>Tw8/6Q5Of49RTqlZg/S1+aj7bdvVS3BAF+66X1KSgMY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
