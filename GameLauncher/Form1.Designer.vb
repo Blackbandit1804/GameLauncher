@@ -454,7 +454,7 @@ Partial Class Form1
         Me.MinimumSize = New System.Drawing.Size(1153, 614)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "GameLauncher_SQUIRREL_DEV_3"
+        Me.Text = "GameLauncher"
         Me.MaterialTabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
