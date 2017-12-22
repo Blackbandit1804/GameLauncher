@@ -54,7 +54,6 @@ Public Class login
                 Form1.playBtn.Enabled = True
                 Form1.playBtn.BackColor = Color.Green
                 Form1.playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
-                Form1.usrTxt.Text = "Welcome, " + My.Settings.user
                 Form1.game()
                 Form1.loginBtn.Text = "Switch account"
                 Form1.signUpBtn.Hide()
@@ -118,7 +117,6 @@ Public Class login
                 Form1.playBtn.Enabled = True
                 Form1.playBtn.BackColor = Color.Green
                 Form1.playBtn.Text = "PLAY! (Signed in as: " + My.Settings.user + ")"
-                Form1.usrTxt.Text = "Welcome, " + My.Settings.user
                 Form1.game()
                 Form1.loginBtn.Text = "Switch account"
                 Form1.MaterialTabControl1.SelectedTab = Form1.TabPage1

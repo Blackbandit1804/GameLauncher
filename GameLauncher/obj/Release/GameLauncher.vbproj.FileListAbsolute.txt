@@ -60,3 +60,15 @@ F:\source\repos\GameLauncher\GameLauncher\obj\Release\GameLauncher.application
 F:\source\repos\GameLauncher\GameLauncher\obj\Release\GameLauncher.exe
 F:\source\repos\GameLauncher\GameLauncher\obj\Release\GameLauncher.xml
 F:\source\repos\GameLauncher\GameLauncher\obj\Release\GameLauncher.pdb
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.vbprojResolveAssemblyReference.cache
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.Console.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.DevMenu.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.Form1.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.login.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.Resources.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.signUp.resources
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.vbproj.GenerateResource.Cache
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.vbproj.CoreCompileInputs.cache
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.exe
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.xml
+C:\Users\csxki\Documents\GitHub\GameLauncher\GameLauncher\obj\Release\GameLauncher.pdb
